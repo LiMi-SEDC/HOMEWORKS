@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <table border="1" style="margin-left: 600px;">
+    <td>
+    <h1>Dado Tea Lunch Special</h1>
+    <form action="">
+    <p style="margin-left: 5px;">Monday through Friday</p>
+    <p style="margin-left: 5px;">11am - 3pm</p>
+    <p style="margin-left: 5px;">$9.95 plus tax</p>
+    <p style="margin-left: 5px;">Includes sandwich,snack and drink.</p>
+    <br>
+
+    <!-- ORDER INFORMATION -->
+
+    <fieldset>
+        <legend>Order Information</legend>
+        <br>
+        <label for="name"><strong>Name</strong></label>
+        <br>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <input type="radio" name="here" value="here" id="here">
+        <label for="here">Here</label>
+        <br>
+        <input type="radio" name="here" value="to-go" id="to-go">
+        <label for="to-go">To Go</label>
+    </fieldset>
+
+    <!-- TABLES -->
+
+    <fieldset>
+        <legend>Tables</legend>
+        <p><strong>Tables for here</strong></p>
+        <input type="radio" name="tables" value="tables1" id="tables1">
+        <label for="tables1">Two to Four Person Tables</label>
+        <br>
+        <input type="radio" name="tables" value="tables2" id="tables2">
+        <label for="tables2">Bar Height Tables</label>
+        <br>
+        <input type="radio" name="tables" value="tables3" id="tables3">
+        <label for="tables3">Booths</label>
+        <br>
+        <input type="radio" name="tables" value="tables4" id="tables4">
+        <label for="tables4">Family Dining Tables</label>
+        <br>
+        <input type="radio" name="tables" value="tables5" id="tables5">
+        <label for="tables5">Outdoor Tables</label>
+    </fieldset>
+
+    <!-- SANDWICHES -->
+
+    <fieldset>
+        <legend>Sandwiches</legend>
+        <p><strong>Monday</strong></p>
+        <input type="radio" name="sandwiches" value="meal1" id="meal1">
+        <label for="meal1">Tomato Mozzarella</label>
+        <br>
+        <input type="radio" name="sandwiches" value="meal2" id="meal2">
+        <label for="meal2">Chicken Salad</label>
+        <br>
+        <p><strong>Tuesday</strong></p>
+        <input type="radio" name="sandwiches1" value="meal3" id="meal3">
+        <label for="meal3">Greek Pepper Wrap</label>
+        <br>
+        <input type="radio" name="sandwiches1" value="meal4" id="meal4">
+        <label for="meal4">Toto Wrap</label>
+        <br>
+        <p><strong>Wednesday</strong></p>
+        <input type="radio" name="sandwiches2" value="meal5" id="meal5">
+        <label for="meal5">Red Pepper Hummus</label>
+        <br>
+        <input type="radio" name="sandwiches2" value="meal6" id="meal6">
+        <label for="meal6">Roasted Turkey</label>
+        <br>
+        <p><strong>Thursday</strong></p>
+        <input type="radio" name="sandwiches3" value="meal7" id="meal7">
+        <label for="meal7">Carrot-Ginger Hummus Wrap</label>
+        <br>
+        <input type="radio" name="sandwiches3" value="meal8" id="meal8">
+        <label for="meal8">Egg Salad</label>
+        <br>
+        <p><strong>Friday</strong></p>
+        <input type="radio" name="sandwiches4" value="meal9" id="meal9">
+        <label for="meal9">Dado Wrap</label>
+        <br>
+        <input type="radio" name="sandwiches4" value="meal10" id="meal10">
+        <label for="meal10">Tuna Salad</label>
+        <hr>
+        <input type="checkbox" name="extra" value="extra" id="extra">
+        <label for="extra">Gluten Free Bread(75c)</label>
+    </fieldset>
+
+    <!-- SNACK -->
+
+        <fieldset>
+            <legend>Snack</legend>
+            <p><strong>Snacks</strong></p>
+            <input type="radio" name="snacks" value="snacks1" id="snacks1">
+            <label for="snacks1">Apple</label>
+            <br>
+            <input type="radio" name="snacks" value="snacks2" id="snacks2">
+            <label for="snacks2">Banana</label>
+            <br>
+            <input type="radio" name="snacks" value="snacks3" id="snacks3">
+            <label for="snacks3">Patato Chips</label>
+        </fieldset>
+
+        <!-- DRINK -->
+
+        <fieldset>
+            <legend>Drink</legend>
+            <p><strong>Drinks</strong></p>
+            <label for="drinks"></label>
+            <select name="drinks" id="drnks">
+                <option value="select" selected disabled>Select a drink</option>
+                <option value="drink1">Coffe or Iced Coffe</option>
+                <option value="drink2">Organic Pepperming</option>
+                <option value="drink3">Hot or Iced Sencha Green Tea</option>
+                <option value="drink4">Hot or Iced Keemun Black Tea</option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            <p>***Extra drinks just for 100c***</p>
+            <input type="checkbox" name="extra" value="extra1" id="extra1">
+            <label for="extra1">CocaCola</label>
+            <br>
+            <input type="checkbox" name="extra" value="extra2" id="extra2">
+            <label for="extra2">Fanta</label>
+            <br>
+            <input type="checkbox" name="extra" value="extra3" id="extra3">
+            <label for="extra3">Sinalco</label>
+            <br>
+            <input type="checkbox" name="extra" value="extra4" id="extra4">
+            <label for="extra4">RedBull</label>
+            <hr>
+            <input type="radio" name="extra" value="largeDrink1" id="largeDrink">
+            <label for="largeDrink">Large drink (75c extra)</label>
+        </fieldset>
+        <br>
+
+        <!-- SUBMIT BUTTON -->
+
+        <input type="submit" value="Place order" style="margin-left: 120px; margin-top: 10px;">
+    </form>
+</td>
+</table>
+</body>
+</html>
